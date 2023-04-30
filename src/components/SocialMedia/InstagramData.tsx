@@ -32,7 +32,7 @@ function filterOutVideoUrls(
 async function InstagramData() {
   try {
     const response = await fetch(
-      "https://beingnotthinking.com/.netlify/functions/instagram"
+      "https://patrickandmichaela.com/.netlify/functions/instagram"
     );
     let instagramPostsNoFilter = await response.json();
 
