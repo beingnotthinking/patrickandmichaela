@@ -25,7 +25,7 @@ const InstagramPost: React.FC<InstagramPostProps> = ({
 function filterOutVideoUrls(
   items: { id: string; url: string; caption: string; permalink: string }[]
 ) {
-  return items.filter((item) => !item.url.includes("https://video-"));
+  return items.filter((item) => !item.url.includes("video"));
 }
 
 // InstagramData function
