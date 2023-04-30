@@ -28,7 +28,7 @@ export const RecentInstagramPosts = () => {
 
   useEffect(() => {
     let ignore = false;
-    fetch("https://beingnotthinking.com/.netlify/functions/instagram")
+    fetch("https://patrickandmichaela.com/.netlify/functions/instagram")
       .then((response) => response.json())
       .then((data: InstagramPost[]) => data.filter(isNotVideoPost))
       .then((data: InstagramPost[]) => data.map(stripTagsFromCaption))
