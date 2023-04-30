@@ -1,0 +1,62 @@
+.site-container header {
+  color: #fff;
+  background-color: #01093c;
+  padding: 1.8em;
+}
+
+.header-upper h1 {
+  font-size: 1.56rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.header-upper nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.header-upper nav ul li a {
+  font-weight: bold;
+  padding: 0.8em;
+}
+
+.header-upper nav ul li:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.header-upper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0em;
+}
+
+.header-upper,
+.header-lower {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.page-summary {
+  font-size: 1.6rem;
+}
+
+main {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.8em;
+}

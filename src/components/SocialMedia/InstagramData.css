@@ -1,0 +1,41 @@
+.instagram-container {
+  padding: 3em;
+  max-width: 80rem;
+}
+
+.post-preview img {
+  border-radius: 3px;
+}
+
+.ig-image {
+  border-radius: 3px;
+  display: block;
+  margin: auto;
+  padding-top: 5%;
+  border-radius: 5px;
+}
+
+.caption {
+  width: 18.75rem;
+  text-align: center;
+  padding: 5%;
+  font-size: 14px;
+  line-height: 1.5;
+  display: block;
+  margin: auto;
+}
+
+.instagram-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 2rem;
+}
+
+.instagram-post {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  overflow: hidden;
+}

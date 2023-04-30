@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a {
+  border-bottom: 3px solid #24e0d0;
+  color: currentColor;
+  padding-bottom: 0.1rem;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #24e0d0;
+}
+
+:focus {
+  outline: 1px solid #24e0d0;
+  outline-offset: 0.25rem;
+}
+
+.my-component {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.markdown-body {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 400;
+  text-align: justify;
+}

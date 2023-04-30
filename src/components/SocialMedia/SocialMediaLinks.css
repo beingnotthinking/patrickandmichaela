@@ -1,0 +1,7 @@
+.social-media-links {
+  display: flex;
+}
+
+.social-media-links a:not(:last-child) {
+  margin-right: 1rem;
+}

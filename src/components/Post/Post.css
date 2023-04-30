@@ -1,0 +1,63 @@
+.post {
+  margin: 0 auto;
+  max-width: 80rem;
+  padding: 0 0px;
+}
+
+.title-container {
+  max-width: 70rem;
+  max-height: 40rem;
+  display: flex;
+  margin: 0 auto;
+  align-self: center 
+}
+
+.post-image {
+  padding-top: 10px;
+  max-width: 30rem;
+  display: flex;
+  align-self: flex-end;
+}
+
+.title {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10rem;
+}
+
+.word {
+}
+
+.post > img {
+  border-radius: 3px;
+  display: block;
+}
+
+.post > p {
+  font-size: 20px;
+}
+
+.post > h1 {
+  color: black;
+  font-size: 44px;
+}
+
+.post > h2 {
+  color: black;
+  font-size: 34px;
+}
+
+.post > h3 {
+  color: black;
+}
+
+.post > h4 {
+  color: black;
+}
+
+.post ol > li > p > strong:first-child {
+  color: black;
+}

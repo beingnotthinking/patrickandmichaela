@@ -1,0 +1,56 @@
+form {
+    width: 80rem;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.contactTitle {
+    font-size: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: lightblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: blue;
+}
+
+button[type="submit"] {
+    background-color: lightblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: blue;
+}
