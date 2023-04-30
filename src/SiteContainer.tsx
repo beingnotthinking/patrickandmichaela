@@ -39,7 +39,7 @@ function SiteContainer({ children }: SiteContainerProps) {
       </header>
       <main>{children}</main>
       <footer>
-        <p>© 2021 BeingNotThinking</p>
+        <p>© 2021 Patrick and Michaela</p>
         <SocialMediaLinks />
       </footer>
     </div>

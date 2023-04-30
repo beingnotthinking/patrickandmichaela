@@ -1,9 +1,7 @@
 import * as CarryOnAndADream from "./carry-on-and-a-dream.mdx";
 import CarryOnAndADreamImage from "../images/carry-on-and-a-dream.webp";
-import * as WhoIsBeingNotThinking from "./who-is-beingnotthinking.mdx";
-import WhoIsBeingNotThinkingImage from "../images/who-is-beingnotthinking.webp";
-import * as WhyBeingNotThinking from "./why-being-not-thinking.mdx";
-import WhyBeingNotThinkingImage from "../images/why-being-not-thinking.webp";
+import * as WhoArePatrickAndMichaela from "./who-are-patrick-and-michaela.mdx";
+import WhoArePatrickAndMichaelaImage from "../images/who-are-patrick-and-michaela.webp";
 import * as WhyWeChoseVanlife from "./why-we-chose-vanlife.mdx";
 import WhyWeChoseVanlifeImage from "../images/why-we-chose-vanlife.webp";
 import * as AddingMeditationToDailyLife from "./adding-meditation-to-daily-life.mdx";
@@ -35,12 +33,12 @@ export const allPosts: PostMetadata[] = [
     tags: CarryOnAndADream.tags,
   },
   {
-    postId: WhoIsBeingNotThinking.id,
-    mdx: WhoIsBeingNotThinking.default,
-    imgSrc: WhoIsBeingNotThinkingImage,
+    postId: WhoArePatrickAndMichaela.id,
+    mdx: WhoArePatrickAndMichaela.default,
+    imgSrc: WhoArePatrickAndMichaelaImage,
     imgAlt: "A man kissing a woman on the cheek, on a beach in Bali",
-    title:  WhoIsBeingNotThinking.title,
-    tags: WhoIsBeingNotThinking.tags,
+    title: WhoArePatrickAndMichaela.title,
+    tags: WhoArePatrickAndMichaela.tags,
   },
   {
     postId: WhyWeChoseVanlife.id,
@@ -49,14 +47,6 @@ export const allPosts: PostMetadata[] = [
     imgAlt: "Looking out the back of a camper van, a woman is relaxing and watching the ocean",
     title: WhyWeChoseVanlife.title,
     tags: WhyWeChoseVanlife.tags,
-  },
-  {
-    postId: WhyBeingNotThinking.id,
-    mdx: WhyBeingNotThinking.default,
-    imgSrc: WhyBeingNotThinkingImage,
-    imgAlt: "A boat floating off a beach in Bali",
-    title: WhyBeingNotThinking.title,
-    tags: WhyBeingNotThinking.tags,
   },
   {
     postId: AddingMeditationToDailyLife.id,
