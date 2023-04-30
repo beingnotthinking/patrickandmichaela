@@ -14,7 +14,7 @@ function SiteContainer({ children }: SiteContainerProps) {
       <header>
         <div className="header-upper">
           <a href="/">
-            <h1>Being Not Thinking</h1>
+            <h1>Patrick and Michaela</h1>
           </a>
           <nav>
             <ul>
