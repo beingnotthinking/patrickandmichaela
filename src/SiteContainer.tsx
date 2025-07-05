@@ -1,7 +1,7 @@
 import "./SiteContainer.css";
 
 import { Link } from "react-router-dom";
-import React from "react";
+import React, { useState } from "react";
 import { SocialMediaLinks } from "./components";
 
 interface SiteContainerProps {
@@ -9,38 +9,46 @@ interface SiteContainerProps {
 }
 
 function SiteContainer({ children }: SiteContainerProps) {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <div className="site-container">
       <header>
         <div className="header-upper">
           <a href="/">
-            <h1>Patrick and Michaela</h1>
+            <h1>Patrick & Michaela</h1>
           </a>
-          <nav>
+          <button 
+            className="mobile-menu-toggle"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            ☰
+          </button>
+          <nav className={mobileMenuOpen ? 'open' : ''}>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
               </li>
               <li>
-                <Link to="/blog">Blog</Link>
+                <Link to="/blog" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/gear" onClick={() => setMobileMenuOpen(false)}>Gear</Link>
+              </li>
+              <li>
+                <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
               </li>
             </ul>
           </nav>
         </div>
-        <div className="header-lower">
-          <p className="page-title">Patrick and Michaela</p>
-          <p className="page-summary">
-            A travel blog to help you live the life you are looking for
-          </p>
-        </div>
       </header>
       <main>{children}</main>
       <footer>
-        <p>© 2021 Patrick and Michaela</p>
-        <SocialMediaLinks />
+        <div className="container">
+          <p>© 2024 Patrick & Michaela - Sailing Thalia</p>
+          <SocialMediaLinks />
+        </div>
       </footer>
     </div>
   );

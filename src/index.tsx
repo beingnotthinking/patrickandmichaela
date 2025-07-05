@@ -1,7 +1,7 @@
 import "./index.css";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Contact, Home, Blog } from "./pages";
+import { Contact, Home, Blog, Gear } from "./pages";
 
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -21,6 +21,7 @@ root.render(
         <Routes>
           <Route index element={<Home />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="gear" element={<Gear />} />
           <Route path="blog">
             {allPosts.map((post) => {
               console.log(post);

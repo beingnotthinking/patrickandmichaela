@@ -1,63 +1,157 @@
 .post {
   margin: 0 auto;
-  max-width: 80rem;
-  padding: 0 0px;
+  max-width: 800px;
+  padding: 2rem 1rem;
+  line-height: 1.7;
 }
 
 .title-container {
-  max-width: 70rem;
-  max-height: 40rem;
-  display: flex;
-  margin: 0 auto;
-  align-self: center 
+  max-width: 100%;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .post-image {
-  padding-top: 10px;
-  max-width: 30rem;
-  display: flex;
-  align-self: flex-end;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
 }
 
 .title {
-  color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-left: 10rem;
+  color: #1f2937;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1rem;
 }
 
 .word {
+  display: inline;
+  margin-right: 0.25rem;
 }
 
 .post > img {
-  border-radius: 3px;
+  border-radius: 8px;
   display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem 0;
 }
 
 .post > p {
-  font-size: 20px;
+  font-size: 1.125rem;
+  color: #374151;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
 }
 
 .post > h1 {
-  color: black;
-  font-size: 44px;
+  color: #1f2937;
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem 0;
+  line-height: 1.3;
 }
 
 .post > h2 {
-  color: black;
-  font-size: 34px;
+  color: #1f2937;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1.5rem 0 1rem 0;
+  line-height: 1.3;
 }
 
 .post > h3 {
-  color: black;
+  color: #1f2937;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1.5rem 0 1rem 0;
+  line-height: 1.3;
 }
 
 .post > h4 {
-  color: black;
+  color: #1f2937;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 1.5rem 0 1rem 0;
+  line-height: 1.3;
+}
+
+.post > ul, .post > ol {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.post > ul > li, .post > ol > li {
+  font-size: 1.125rem;
+  color: #374151;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.post > blockquote {
+  border-left: 4px solid #3b82f6;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #6b7280;
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 0 8px 8px 0;
+}
+
+.post > code {
+  background: #f1f5f9;
+  padding: 0.125rem 0.25rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  color: #1f2937;
+}
+
+.post > pre {
+  background: #1f2937;
+  color: #f8fafc;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.post > pre > code {
+  background: none;
+  padding: 0;
+  color: inherit;
 }
 
 .post ol > li > p > strong:first-child {
-  color: black;
+  color: #1f2937;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .post {
+    padding: 1rem 0.5rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .post > p {
+    font-size: 1rem;
+  }
+  
+  .post > h1 {
+    font-size: 1.5rem;
+  }
+  
+  .post > h2 {
+    font-size: 1.25rem;
+  }
+  
+  .post > h3 {
+    font-size: 1.125rem;
+  }
 }

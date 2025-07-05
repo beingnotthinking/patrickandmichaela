@@ -1,7 +1,31 @@
 .social-media-links {
   display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
-.social-media-links a:not(:last-child) {
-  margin-right: 1rem;
+.social-media-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  color: #6b7280;
+  transition: all 0.2s ease;
+}
+
+.social-media-links a:hover {
+  background: #f8fafc;
+  border-color: #3b82f6;
+  color: #3b82f6;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+
+.social-media-links svg {
+  width: 18px;
+  height: 18px;
 }
